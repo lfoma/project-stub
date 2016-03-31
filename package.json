@@ -14,6 +14,7 @@
   },
   "devDependencies": {
     "bem": "^0.10.2",
+    "bem-grid": "^2.3.2",
     "borschik-tech-cleancss": "^2.1.0",
     "enb": "^1.1.2",
     "enb-bem-techs": "^2.2.1",
