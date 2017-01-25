@@ -1,0 +1,59 @@
+.exploreLanding {
+    $offset: 100px;
+    $base-width: 1300px;
+
+    &__content {
+        width: $base-width;
+        margin: auto;
+        margin-bottom: calc($offset * 0.5);
+        box-sizing: border-box;
+
+        &_offset {
+            &_base {
+                padding-left: $offset;
+            }
+        }
+
+        &_width {
+            &_2-3 {
+                width: calc($base-width * 0.66);
+            }
+        }
+    }
+
+    &__title {
+        font-size: 3.2em;
+
+        &_level {
+            &_3 {
+                font-size: 2.1em;
+            }
+        }
+    }
+
+    &__row {
+        display: flex;
+
+        &_justify {
+            &_between {
+                justify-content: space-between;
+            }
+
+            &_center {
+                justify-content: center;
+            }
+        }
+
+        &_align {
+            &_center {
+                align-items: center;
+            }
+        }
+    }
+
+    &__wave {
+        background-image: url('exploreLanding__wave.png');
+        background-position: top left;
+        background-repeat: repeat-x;
+    }
+}

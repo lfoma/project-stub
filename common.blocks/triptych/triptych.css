@@ -1,0 +1,22 @@
+.triptych {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 0;
+
+    &__item {
+        flex-basis: 25%;
+        list-style: none;
+    }
+
+    &__picture {
+        height: 180px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__image {
+        max-width: 100%;
+    }
+}

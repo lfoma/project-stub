@@ -1,0 +1,18 @@
+.downloadButton {
+    &__link {
+        display: block;
+        padding: 15px 70px 17px;
+        background-image: linear-gradient(to bottom, #65ad02, #579304);
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.3);
+        text-align: center;
+        color: #fff;
+        font-weight: 600;
+        font-size: 1.9rem;
+        line-height: 1;
+        text-decoration: none;
+
+        &.link_hovered {
+            background-image: linear-gradient(to bottom, #6cb502, #5e9d04);
+        }
+    }
+}

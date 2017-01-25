@@ -36,6 +36,7 @@ module.exports = {
                     ]
                 },
                 { tag: 'h2', content: 'islands theme' },
+                { block: 'image', url:'ad'},
 
                 {
                     block: 'table',
