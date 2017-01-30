@@ -121,7 +121,7 @@ block('exploreLanding-applications').content()(function() {
                                                 description: 'Popular educational and entertaining videos, cartoons and TV shows available in a safe and simple player.',
                                                 slides: [
                                                     'images/slides/magicMovies_1.jpg',
-                                                    'images/slides/magicMovies_2.jpg'
+                                                    'images/slides/magicMovies_3.jpg'
                                                 ]
                                             },
                                             {
@@ -130,7 +130,7 @@ block('exploreLanding-applications').content()(function() {
                                                 description: 'Popular educational and entertaining videos, cartoons and TV shows available in a safe and simple player.',
                                                 slides: [
                                                     'images/slides/magicMovies_1.jpg',
-                                                    'images/slides/magicMovies_2.jpg'
+                                                    'images/slides/magicMovies_3.jpg'
                                                 ]
                                             }
                                         ]
