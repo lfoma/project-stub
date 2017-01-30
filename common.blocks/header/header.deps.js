@@ -1,0 +1,7 @@
+({
+    shouldDeps: [
+        'grid',
+        'magicLogo',
+        'navigation'
+    ]
+})

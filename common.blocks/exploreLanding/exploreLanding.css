@@ -2,6 +2,18 @@
     $offset: 100px;
     $base-width: 1300px;
 
+    &__section {
+        &_offset{
+            padding-top: 80px;
+        }
+
+        &_wave {
+            background-image: url('images/exploreLanding__wave.png');
+            background-position: top left;
+            background-repeat: repeat-x;
+        }
+    }
+
     &__content {
         width: $base-width;
         margin: auto;
@@ -19,12 +31,22 @@
                 width: calc($base-width * 0.66);
             }
         }
+
+        &_align {
+            &_center {
+                text-align: center;
+            }
+        }
     }
 
     &__title {
         font-size: 3.2em;
 
         &_level {
+            &_1 {
+                font-size: 3.05em
+            }
+
             &_3 {
                 font-size: 2.1em;
             }
@@ -49,11 +71,5 @@
                 align-items: center;
             }
         }
-    }
-
-    &__wave {
-        background-image: url('exploreLanding__wave.png');
-        background-position: top left;
-        background-repeat: repeat-x;
     }
 }

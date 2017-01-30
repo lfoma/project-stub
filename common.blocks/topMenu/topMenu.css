@@ -1,0 +1,93 @@
+.topMenu {
+    &__toggle {
+        width: 36px;
+        height: 28px;
+    }
+
+    &__popup {
+        width: $base-width;
+        background-color: #39c;
+        padding: calc($offset * 0.5);
+    }
+
+    &__main, &__additional {
+        padding-left: 20%;
+    }
+
+    &__main {
+        margin-bottom: calc($offset * 0.3);
+    }
+
+    &__additional {
+        flex-flow: column wrap;
+        max-height: 23rem;
+        display: flex;
+        margin-bottom: calc($offset * 1.5);
+    }
+
+    &__footer {
+        text-align: center;
+    }
+
+    &__thumbnail {
+        display: inline-flex;
+        vertical-align: middle;
+        width: 68px;
+        height: 68px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        margin-right: 30px;
+    }
+
+    &__item-title {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        color: #fff;
+        font-size: 2.44rem;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            height: 2px;
+            width: 0;
+            background-color: #fff;
+            left: 0;
+            transition: width 0.2s ease-in-out;
+        }
+
+        &:hover, &_active {
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+
+    &__item {
+        &_view_column {
+            margin-top: calc($offset * 0.5);
+        }
+    }
+
+    &__main-links {
+        padding-left: 100px; /* Ширина иконки и отступа */
+    }
+
+    &__link {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.22rem;
+
+        & + & {
+            margin-left: 15px;
+
+            &::before {
+                content: '•';
+                margin-right: 15px;
+            }
+        }
+    }
+}

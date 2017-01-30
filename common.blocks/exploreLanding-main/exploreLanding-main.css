@@ -1,0 +1,24 @@
+.exploreLanding-main {
+    padding-top: 322px;
+    padding-bottom: 100px;
+    background: url('images/wizard.png') right 20% bottom no-repeat,
+                url('images/bg.jpg');
+
+    &__title {
+        margin-bottom: calc($offset * 0.5);
+        font-weight: 600;
+    }
+
+    &__button {
+        display: inline-block;
+    }
+
+    &__slider {
+        width: 850px;
+    }
+
+    &__slide {
+        width: 850px;
+        font-size: 2.11em;
+    }
+}

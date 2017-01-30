@@ -1,0 +1,243 @@
+.exploreLanding-applications {
+    background: linear-gradient(to bottom, #fff, rgba(255, 255, 255, 0) 40%,  rgba(255, 255, 255, 0) 60%, #fff),
+                url('images/bg.jpg') center no-repeat fixed;
+
+    &__menu {
+        display: inline-block;
+        background-color: #f5efe1;
+        padding: 30px;
+        width: 21%;
+        box-sizing: border-box;
+    }
+
+    &__menu-header {
+        margin-bottom: 10px;
+    }
+
+    &__menu-icon {
+        display: inline-flex;
+        vertical-align: middle;
+        width: 45px;
+        height: 45px;
+        background-color: #ddd;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        margin-right: 25px;
+    }
+
+    &__menu-header-title {
+        display: inline-block;
+        vertical-align: middle;
+        width: 140px;
+        font-size: 1.44rem;
+    }
+
+    &__menu-title {
+        font-size: 1rem;
+        padding-left: calc(45px + 25px); /* Отступ по размеру иконки */
+        transition: background-color 0.2s ease-in-out;
+        cursor: pointer;
+    }
+
+    &__screen-description {
+        text-align: center;
+    }
+
+    &__showcase {
+        position: relative;
+    }
+
+    &__showcase-slide {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 75%;
+    }
+
+    &__slider {
+        width: 900px;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    &__menu-item {
+        & + & {
+            margin-top: 5px;
+        }
+    }
+
+    .showcase__item {
+        &_hidden {
+            .showcase__link {
+                background-color: transparent;
+            }
+        }
+    }
+
+    &__menu-section {
+        margin-bottom: 15px;
+
+        &_type {
+            &_learn {
+                .exploreLanding-applications {
+                    &__menu-icon {
+                        background-color: #6dad11;
+                    }
+                }
+
+                .showcase__link {
+                    background-color: #6dad11;
+
+                    &:hover, &:focus {
+                        background-color: #6dad11;
+                    }
+                }
+
+                .slider__control {
+                    &_view_bullet {
+                        background-color: #d1e4bf;
+
+                        &:focus, &:hover {
+                            background-color: #6dad11;
+                        }
+                    }
+
+                    &_active {
+                        &.slider__control_view_bullet {
+                            background-color: #6dad11;
+                        }
+                    }
+                }
+            }
+
+            &_play {
+                .exploreLanding-applications {
+                    &__menu-icon {
+                        background-color: #39c;
+                    }
+                }
+
+                .showcase__link {
+                    background-color: #39c;
+
+                    &:hover, &:focus {
+                        background-color: #39c;
+                    }
+                }
+
+                .slider__control {
+                    &_view_bullet {
+                        background-color: #b2ecfd;
+
+                        &:focus, &:hover {
+                            background-color: #39c;
+                        }
+                    }
+
+                    &_active {
+                        &.slider__control_view_bullet {
+                            background-color: #39c;
+                        }
+                    }
+                }
+            }
+
+            &_watch {
+                .exploreLanding-applications {
+                    &__menu-icon {
+                        background-color: #814bd2;
+                    }
+                }
+
+                .showcase__link {
+                    background-color: #814bd2;
+
+                    &:hover, &:focus {
+                        background-color: #814bd2;
+                    }
+                }
+
+                .slider__control {
+                    &_view_bullet {
+                        background-color: #ccc9e8;
+
+                        &:focus, &:hover {
+                            background-color: #814bd2;
+                        }
+                    }
+
+                    &_active {
+                        &.slider__control_view_bullet {
+                            background-color: #814bd2;
+                        }
+                    }
+                }
+            }
+
+            &_create {
+                .exploreLanding-applications {
+                    &__menu-icon {
+                        background-color: #e35d3a;
+                    }
+                }
+
+                .showcase__link {
+                    background-color: #e35d3a;
+
+                    &:hover, &:focus {
+                        background-color: #e35d3a;
+                    }
+                }
+
+                .slider__control {
+                    &_view_bullet {
+                        background-color: #f2ceaf;
+
+                        &:focus, &:hover {
+                            background-color: #e35d3a;
+                        }
+                    }
+
+                    &_active {
+                        &.slider__control_view_bullet {
+                            background-color: #e35d3a;
+                        }
+                    }
+                }
+            }
+
+            &_internet {
+                .exploreLanding-applications {
+                    &__menu-icon {
+                        background-color: #d74e82;
+                    }
+                }
+
+                .showcase__link {
+                    background-color: #d74e82;
+
+                    &:hover, &:focus {
+                        background-color: #d74e82;
+                    }
+                }
+
+                .slider__control {
+                    &_view_bullet {
+                        background-color: #f3c3e0;
+
+                        &:focus, &:hover {
+                            background-color: #d74e82;
+                        }
+                    }
+
+                    &_active {
+                        &.slider__control_view_bullet {
+                            background-color: #d74e82;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

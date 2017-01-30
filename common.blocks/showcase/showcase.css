@@ -1,0 +1,11 @@
+.showcase {
+    &__item {
+        &_hidden {
+            .showcase {
+                &__slide {
+                    display: none;
+                }
+            }
+        }
+    }
+}

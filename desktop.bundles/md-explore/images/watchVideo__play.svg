@@ -1,0 +1,31 @@
+<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="105px" height="75px">
+<defs>
+<filter filterUnits="userSpaceOnUse" id="Filter_0" x="0px" y="0px" width="105px" height="75px"  >
+    <feOffset in="SourceAlpha" dx="0" dy="1" />
+    <feGaussianBlur result="blurOut" stdDeviation="2" />
+    <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
+    <feComposite operator="atop" in="floodOut" in2="blurOut" />
+    <feComponentTransfer><feFuncA type="linear" slope="0.3"/></feComponentTransfer>
+    <feMerge>
+    <feMergeNode/>
+    <feMergeNode in="SourceGraphic"/>
+  </feMerge>
+</filter>
+<linearGradient id="PSgrad_0" x1="0%" x2="0%" y1="100%" y2="0%">
+  <stop offset="0%" stop-color="rgb(6,137,157)" stop-opacity="1" />
+  <stop offset="100%" stop-color="rgb(0,203,227)" stop-opacity="1" />
+</linearGradient>
+
+</defs>
+<g filter="url(#Filter_0)">
+<path fill-rule="evenodd"  fill="rgb(6, 50, 148)"
+ d="M17.770,3.128 C17.770,3.128 34.974,1.999 52.225,1.999 C69.570,1.999 86.963,3.128 86.963,3.128 C94.011,3.128 99.725,8.813 99.725,15.825 C99.725,15.825 100.859,25.725 100.859,35.717 C100.859,45.897 99.725,56.174 99.725,56.174 C99.725,63.186 94.011,68.871 86.963,68.871 C86.963,68.871 69.570,69.999 52.225,69.999 C34.974,69.999 17.770,68.871 17.770,68.871 C10.722,68.871 5.008,63.186 5.008,56.174 C5.008,56.174 3.874,45.992 3.874,35.858 C3.874,25.818 5.008,15.825 5.008,15.825 C5.008,8.813 10.722,3.128 17.770,3.128 Z"/>
+</g>
+<path fill="url(#PSgrad_0)"
+ d="M17.770,3.128 C17.770,3.128 34.974,1.999 52.225,1.999 C69.570,1.999 86.963,3.128 86.963,3.128 C94.011,3.128 99.725,8.813 99.725,15.825 C99.725,15.825 100.859,25.725 100.859,35.717 C100.859,45.897 99.725,56.174 99.725,56.174 C99.725,63.186 94.011,68.871 86.963,68.871 C86.963,68.871 69.570,69.999 52.225,69.999 C34.974,69.999 17.770,68.871 17.770,68.871 C10.722,68.871 5.008,63.186 5.008,56.174 C5.008,56.174 3.874,45.992 3.874,35.858 C3.874,25.818 5.008,15.825 5.008,15.825 C5.008,8.813 10.722,3.128 17.770,3.128 Z"/>
+<path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+ d="M37.875,14.005 L37.875,57.993 L75.856,36.138 L37.875,14.005 Z"/>
+</svg>

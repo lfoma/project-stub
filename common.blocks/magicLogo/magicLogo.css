@@ -1,0 +1,29 @@
+.magicLogo {
+    color: #ffffff;
+
+    &__icon {
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 20px;
+    }
+
+    &__text {
+        display: inline-block;
+        vertical-align: top;
+        text-align: right;
+        color: #ffffff;
+    }
+
+    &__title {
+        font-size: 3.22em;
+        line-height: 1;
+        letter-spacing: -0.6px;
+        margin-bottom: 15px;
+    }
+
+    &__subtitle {
+        font-size: 1.44em;
+        line-height: 0.5;
+        letter-spacing: -0.6px;
+    }
+}

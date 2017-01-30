@@ -1,0 +1,48 @@
+.grid {
+    $base-width: 1300px;
+    $offset: 100px;
+    $gap: calc($offset * 0.6);
+
+    &__container {
+        width: $base-width;
+        margin: auto;
+        box-sizing: border-box;
+    }
+
+    &__row {
+        display: flex;
+
+        &_justify {
+            &_between {
+                justify-content: space-between;
+            }
+
+            &_end {
+                justify-content: flex-end;
+            }
+        }
+    }
+
+    &__content {
+        margin-bottom: calc($offset * 0.5);
+        box-sizing: border-box;
+
+        &_offset {
+            &_base {
+                padding-left: $offset;
+            }
+        }
+
+        &_width {
+            &_2-3 {
+                width: calc($base-width * 0.66);
+            }
+        }
+
+        &_align {
+            &_center {
+                text-align: center;
+            }
+        }
+    }
+}

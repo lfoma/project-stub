@@ -2,6 +2,7 @@
     &__link {
         display: block;
         padding: 15px 70px 17px;
+        max-width: 300px;
         background-image: linear-gradient(to bottom, #65ad02, #579304);
         box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.3);
         text-align: center;
@@ -14,5 +15,10 @@
         &.link_hovered {
             background-image: linear-gradient(to bottom, #6cb502, #5e9d04);
         }
+    }
+
+    &__notice {
+        margin-top: 15px;
+        text-align: right;
     }
 }

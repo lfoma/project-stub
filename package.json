@@ -54,5 +54,8 @@
     "test": "enb make && enb make clean && gulp",
     "start": "enb server"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "jcarousel": "^0.3.4"
+  }
 }

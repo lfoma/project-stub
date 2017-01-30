@@ -1,0 +1,42 @@
+.textSlider {
+    $slide-width: 850px;
+
+    position: relative;
+
+    &__root {
+        overflow: hidden;
+        position: relative;
+        width: $slide-width;
+    }
+
+    &__list {
+        width: 2000em;
+        position: relative;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__item {
+        float: left;
+        font-size: 2.11em;
+        width: $slide-width;
+    }
+
+    &__control {
+        position: absolute;
+        top: 50%;
+        font-size: 2.4em;
+        font-weight: bold;
+
+        &_direction {
+            &_prev {
+                left: 0;
+            }
+
+            &_next {
+                right: 0;
+            }
+        }
+
+    }
+}

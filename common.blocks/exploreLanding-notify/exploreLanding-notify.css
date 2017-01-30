@@ -1,6 +1,6 @@
 .exploreLanding-notify {
     background-color: #fef6d6;
-    padding: $offset 0;
+    padding: $offset 0 calc($offset * 0.7);
 
     &__icon {
         margin-right: calc($offset * 0.5);

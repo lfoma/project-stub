@@ -25,7 +25,7 @@ var techs = {
         browserJs: require('enb-js/techs/browser-js'),
 
         // bemtree
-        bemtree: require('enb-bemxjst/techs/bemtree'),
+        // bemtree: require('enb-bemxjst/techs/bemtree'),
 
         // bemhtml
         bemhtml: require('enb-bemxjst/techs/bemhtml'),
@@ -39,6 +39,7 @@ var techs = {
         { path: 'node_modules/bem-components/desktop.blocks', check: false },
         { path: 'node_modules/bem-components/design/common.blocks', check: false },
         { path: 'node_modules/bem-components/design/desktop.blocks', check: false },
+        'dev.blocks',
         'common.blocks',
         'desktop.blocks'
     ];
@@ -63,7 +64,7 @@ module.exports = function(config) {
             }],
 
             // bemtree
-            [techs.bemtree, { sourceSuffixes: ['bemtree', 'bemtree.js'] }],
+            // [techs.bemtree, { sourceSuffixes: ['bemtree', 'bemtree.js'] }],
 
             // bemhtml
             [techs.bemhtml, {
@@ -109,6 +110,6 @@ module.exports = function(config) {
             [techs.borschik, { source: '?.css', target: '?.min.css', minify: isProd }]
         ]);
 
-        nodeConfig.addTargets([ '?.bemtree.js', '?.html', '?.min.css', '?.min.js']);
+        nodeConfig.addTargets([/* '?.bemtree.js', */ '?.html', '?.min.css', '?.min.js']);
     });
 };
