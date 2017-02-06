@@ -1,0 +1,8 @@
+.exploreLanding-integration {
+    background: url('images/bg.jpg') center bottom no-repeat,
+                linear-gradient(to right, #6bccf5, #0f77be);
+
+    &__spaceHolder {
+        height: 650px;
+    }
+}

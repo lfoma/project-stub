@@ -28,12 +28,29 @@ module.exports = {
                         },
                         {
                             block: 'exploreLanding-notify',
-                            mix: [{block: 'exploreLanding', elem: 'section', elemMods:{wave: true }}]
+                            mix: [{block: 'exploreLanding', elem: 'section', elemMods:{wave: 'top' }}]
                         },
                         {
                             block: 'exploreLanding-applications',
                             mix: [{block: 'exploreLanding', elem: 'section', elemMods:{offset: true }}]
-                        }
+                        },
+                        {
+                            block: 'exploreLanding-magicPick',
+                            mix: [{block: 'exploreLanding', elem: 'section', elemMods:{wave: 'both', offset: true}}]
+                        },
+                        {
+                            block: 'exploreLanding-parental',
+                            mix: [{block: 'exploreLanding', elem: 'section', elemMods:{ offset: true}}]
+                        },
+                        {
+                            block: 'exploreLanding-integration',
+                            mix: [{block: 'exploreLanding', elem: 'section', elemMods:{ offset: true}}]
+                        },
+                        {
+                            block: 'exploreLanding-locals',
+                            mix: [{block: 'exploreLanding', elem: 'section', elemMods:{ offset: true}}]
+                        },
+
                     ]
                 }
             ]

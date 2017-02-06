@@ -1,7 +1,10 @@
 .grid {
     $base-width: 1300px;
+    $small-base-width: 1024px;
     $offset: 100px;
+    $small-offset: 80px;
     $gap: calc($offset * 0.6);
+
 
     &__container {
         width: $base-width;
@@ -20,6 +23,16 @@
             &_end {
                 justify-content: flex-end;
             }
+
+            &_center {
+                justify-content: center;
+            }
+        }
+
+        &_wrap {
+            &_wrap {
+                flex-wrap: wrap;
+            }
         }
     }
 
@@ -34,6 +47,10 @@
         }
 
         &_width {
+            &_1-2 {
+                width: calc($base-width * 0.5);
+            }
+
             &_2-3 {
                 width: calc($base-width * 0.66);
             }

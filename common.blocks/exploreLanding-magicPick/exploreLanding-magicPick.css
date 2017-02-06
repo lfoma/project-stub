@@ -1,0 +1,4 @@
+.exploreLanding-magicPick {
+    background: linear-gradient(to bottom, #f5f9fc, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0) 70%, #f5f9fc),
+                url('images/dots.jpg') fixed center;
+}

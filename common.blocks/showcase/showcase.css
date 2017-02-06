@@ -1,4 +1,124 @@
 .showcase {
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        cursor: pointer;
+
+        & + & {
+            margin-top: 25px;
+        }
+
+        &:hover, &_active {
+            .showcase {
+                &__menu-text {
+                    background-color: #3399cc;
+                }
+            }
+        }
+
+    }
+
+    &__menu-icon {
+        display: inline-flex;
+        vertical-align: middle;
+        width: 45px;
+        height: 45px;
+        background-color: #ddd;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        margin-right: 15px;
+        flex-shrink: 0;
+    }
+
+    &__menu-text {
+        display: inline-block;
+        vertical-align: middle;
+        padding-left: 10px;
+        flex-grow: 2;
+    }
+
+    &__slider {
+        margin-bottom: 50px;
+    }
+
+    &__description {
+        padding: 0 20%;
+        text-align: center;
+    }
+
+    &__menu {
+        flex-basis: 30%;
+        padding: 30px;
+        box-sizing: border-box;
+        background-color: #d7e0e3;
+        margin-right: 80px;
+    }
+
+    &__slides {
+        flex-basis: 70%;
+    }
+
+    &__screen {
+        &_hidden {
+            display: none;
+        }
+    }
+
+    &__title {
+        &_theme {
+            &_general {
+                .showcase {
+                    &__menu-icon {
+                        background-color: #65aa4a;
+                    }
+                }
+            }
+
+            &_profile {
+                .showcase {
+                    &__menu-icon {
+                        background-color: #3c7d95;
+                    }
+                }
+            }
+
+            &_work {
+                .showcase {
+                    &__menu-icon {
+                        background-color: #805992;
+                    }
+                }
+            }
+
+            &_limit {
+                .showcase {
+                    &__menu-icon {
+                        background-color:#ba4a4a;
+
+                    }
+                }
+            }
+
+            &_switch {
+                .showcase {
+                    &__menu-icon {
+                        background-color: #848585;
+                    }
+                }
+            }
+
+            &_remote {
+                .showcase {
+                    &__menu-icon {
+                        background-color: #3c6295;
+                    }
+                }
+            }
+        }
+    }
+
     &__item {
         &_hidden {
             .showcase {

@@ -4,13 +4,51 @@
 
     &__section {
         &_offset{
-            padding-top: 80px;
+            padding-top: calc($offset * 0.8);
+            padding-bottom: $offset;
         }
 
         &_wave {
-            background-image: url('images/exploreLanding__wave.png');
-            background-position: top left;
-            background-repeat: repeat-x;
+            &_top, &_both {
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    height: 30px;
+                    background-image: url('images/exploreLanding__wave.png');
+                    background-position: top left;
+                    background-repeat: repeat-x;
+                }
+
+                &.exploreLanding__section_offset {
+                    padding-top: calc(($offset * 0.8) + 30px)
+                }
+            }
+
+            &_bottom, &_both {
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    height: 30px;
+                    background-image: url('images/exploreLanding__wave.png');
+                    background-position: top left;
+                    background-repeat: repeat-x;
+                    transform: scale(1, -1);
+                }
+
+                &.exploreLanding__section_offset {
+                    padding-bottom: calc($offset + 30px);
+                }
+            }
         }
     }
 
@@ -40,15 +78,19 @@
     }
 
     &__title {
-        font-size: 3.2em;
+        font-size: 3.2rem;
 
         &_level {
             &_1 {
-                font-size: 3.05em
+                font-size: 3.05rem
             }
 
             &_3 {
-                font-size: 2.1em;
+                font-size: 2.1rem;
+            }
+
+            &_4 {
+                font-size: 1.44rem;
             }
         }
     }
