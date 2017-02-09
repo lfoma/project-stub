@@ -7,7 +7,7 @@ module.exports = {
         {elem: 'meta', attrs: {name: 'viewport', content: 'width=device-width, initial-scale=1'}},
         {elem: 'css', url: 'md-explore.min.css'}
     ],
-    scripts: [{elem: 'js', url: 'md-explore.browser.js'}],
+    scripts: [{elem: 'js', url: 'md-explore.min.js'}],
     content: [
         {
             block: 'header'
